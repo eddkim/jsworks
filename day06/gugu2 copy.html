@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수의 정의와 호출</title>
+</head>
+<body>
+    <script>
+
+        
+        function gugu(){ //매개변수
+            // var dan = 4;
+            for (var i = 2; i <= 9; i++){
+                document.write("<br><br>--------"+i+"단----------<br>")
+                for (var j = 1; j<= 9; j++){
+                    document.write(i+"x"+j+"="+(i*j)+"<br>");
+                }
+            }
+            
+        }
+        gugu();
+
+        // function sqr (x){//지역변수
+        //     return x*x;
+        // }
+        // var num = sqr(4); //제곱이 반환된 값
+        // document.write(num);
+
+    </script>
+</body>
+</html>
