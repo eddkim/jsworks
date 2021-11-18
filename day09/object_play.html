@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>>
+    <script>
+        function player(n,a,isMe){
+            this.n = n; //멤버변수 = 외부입력
+            this.a = a; 
+            this.isMe = isMe;
+            this.info = function(){
+                if(this.isMe == true)
+                document.write("기혼"+"<br>")
+                else
+                document.write("미혼"+"<br>")
+            }
+        }
+
+        var p1 = new player("손흥민",31,false);
+        document.write(p1.n+"<br>");
+        document.write(p1.a+"<br>");
+    </script>
+</body>
+</html>
